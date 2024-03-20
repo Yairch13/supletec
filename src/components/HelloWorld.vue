@@ -1,76 +1,8 @@
 <template>
   <div >
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="footer" >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Inicio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Catálogo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mis compras</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Perfil
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Editar perfil</a></li>
-                <li><a class="dropdown-item" href="#">Ver</a></li>
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cerrar sesión</a>
-          </li>
-        </div>
-      </div>
-    </nav>
+    <HeaderComponent />   
     <div id="contenido">
-      <!-- Inicia carrusel -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../images/proto.jpg"  alt="..." id="discord">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/critulina.jpg" alt="..." id="discord">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/img2.jpg"  alt="..." id="discord">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../images/creti/creatinauno.png"  alt="..." id="discord">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-      
-    
-      <!-- Termina carrusel -->
-      <!-- Productos Desctacados -->
-     <!-- Productos Destacados -->
+      <CarruselComponent />  
      <h1>PRODUCTOS DESTACADOS</h1>
       <div class="container">
         <!-- Primera fila de productos destacados -->
@@ -124,8 +56,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-4" id="target">
-            <div class="card mb-4">
+          <div class="col-12 col-sm-4" >
+            <div class="card mb-4" id="target">
               <h5 class="card-title">Pre Entreno Dragon Pharma Venom Inferno 40 Servs Extreme Sabor Cotton candy</h5>
               <img src="../images/preentreno/venom.jpg" class="card-img-top" alt="" id="pd">
               <div class="card-body">
@@ -135,8 +67,8 @@
             </div>
           </div>
 
-          <div class="col-12 col-sm-4" id="target">
-            <div class="card mb-4">
+          <div class="col-12 col-sm-4" >
+            <div class="card mb-4" id="target">
               <h5 class="card-title">Pre Workout Pre-xplode Primet Pre Entreno Piña</h5>
               <img src="../images/preentreno/piña.jpg" class="card-img-top" alt="" id="pd">
               <div class="card-body">
@@ -186,54 +118,23 @@
         <!-- Fin de la tercera fila -->
       </div>
       <!-- Fin de Productos Destacados -->
-                              <!-- Footer -->
-                            <footer class="footer mt-auto py-3">
-                              <div class="container">
-                                <div class="row">
-                                  <!-- Columnas a la izquierda -->
-                                  <div class="col-md-4">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Trabaja con nosotros</a></li>
-                                        <li><a href="#">Términos y condiciones</a></li>
-                                        <li><a href="#">Cómo cuidamos tu privacidad</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Accesibilidad</a></li>
-                                        <li><a href="#">Ayuda</a></li>
-                                        <li><a href="#">Contáctanos</a></li>
-                                     </ul>
-                                  </div>
-                                  <div class="col-md-4">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Preguntas frecuentes</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Servicios</a></li>
-                                    </ul>
-                                  </div>
-                                  
-                                 
-                                </div>
-
-                                <!-- Mensaje de Copyright -->
-                                <div class="row mt-3">
-                                  <div class="col-md-12 text-center">
-                                    <p>Copyright © 2021-2024 El presente canal de instrucción o ambiente, es operado por DeRemate.Com de México, S. de R.L. de C.V. identificada bajo la marca comercial "Supletec".</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </footer>
+      <FooterComponent />       
 	
                 </div>
               </div>
    
 </template>
-
 <script>
+import FooterComponent from '../components/Footer';
+import HeaderComponent from '../components/header';
+import CarruselComponent from '../components/carrusel';
 export default {
   name: 'HelloWorld',
-  props: {},
+  components: {
+    FooterComponent,
+    HeaderComponent,
+    CarruselComponent,
+  },
 };
 </script>
 
@@ -247,11 +148,7 @@ h1{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-footer{
 
-  background: conic-gradient(#D0D3D4, #ECF0F1);
-  color: #1B2631;
-}
 #target{
   background: linear-gradient(to top,#D0D3D4, #3a92a8);
    height: 480px;
@@ -270,15 +167,7 @@ footer{
 h3 {
   margin: 40px 0 0;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
 #discord{
 
   width: 300px;
